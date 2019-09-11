@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2019%2F09%2F11%2Ftest%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <tags>
-        <tag>coin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[markdownpad操作]]></title>
     <url>%2F2019%2F09%2F10%2Fmarkdownpad%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[1、基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 2、添加表格]]></content>
@@ -16,6 +8,6 @@
   <entry>
     <title><![CDATA[sublime_text_3操作笔记]]></title>
     <url>%2F2019%2F09%2F10%2Fsublime-text-3%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[##sublime text3的使用方法１、快捷键 ctrl+shift+p ａ．让左侧显示目录树：输入view -&gt;Side Bar -&gt;Show Side Bar ｂ．汉化：install Package –&gt; ChineseLocalizations]]></content>
+    <content type="text"><![CDATA[sublime text3的使用方法１、快捷键 ctrl+shift+p ａ．让左侧显示目录树：输入view -&gt;Side Bar -&gt;Show Side Bar ｂ．汉化：install Package –&gt; ChineseLocalizations]]></content>
   </entry>
 </search>
