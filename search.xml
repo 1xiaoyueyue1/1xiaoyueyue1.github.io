@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2019%2F09%2F11%2Ftest%2F</url>
+    <content type="text"><![CDATA[who is you are oke 我是谁，我的任务是什么，ｗｈａｔ＇ｓ ｙｏｕ ｎａｍｅ]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[markdownpad操作]]></title>
     <url>%2F2019%2F09%2F10%2Fmarkdownpad%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[1、基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 2、添加表格]]></content>
