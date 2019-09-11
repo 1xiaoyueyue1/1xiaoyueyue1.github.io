@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[markdownpad操作]]></title>
     <url>%2F2019%2F09%2F10%2Fmarkdownpad%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 ##2、添加表格 使用 | 来分隔不同的单元格，使用 - 来分隔表头和其他行：| name | age | blog || ———— | — | ——————————- || LearnShare | 12 | LearnShare || Mike | 32 | Mike |]]></content>
+    <content type="text"><![CDATA[1、基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 2、添加表格]]></content>
   </entry>
   <entry>
     <title><![CDATA[sublime_text_3操作笔记]]></title>
