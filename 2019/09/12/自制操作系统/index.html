@@ -55,21 +55,21 @@
   };
 </script>
 
-  <meta name="description" content="参考博文：">
+  <meta name="description" content="1、在自己制作的软盘上显示hello word​    显示结果：">
 <meta name="keywords" content="笔记,汇编">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自制操作系统">
 <meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2019/09/12/自制操作系统/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="参考博文：">
+<meta property="og:description" content="1、在自己制作的软盘上显示hello word​    显示结果：">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/12/nBBFqU.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/12/nBBirT.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/12/nBBPMV.png">
-<meta property="og:updated_time" content="2019-09-12T11:17:22.431Z">
+<meta property="og:updated_time" content="2019-09-12T12:44:13.318Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="自制操作系统">
-<meta name="twitter:description" content="参考博文：">
+<meta name="twitter:description" content="1、在自己制作的软盘上显示hello word​    显示结果：">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/09/12/nBBFqU.png">
   <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2019/09/12/自制操作系统/">
 
@@ -288,7 +288,7 @@
                 
               
 
-              <time title="创建时间：2019-09-12 14:39:55 / 修改时间：19:17:22" itemprop="dateCreated datePublished" datetime="2019-09-12T14:39:55+08:00">2019-09-12</time>
+              <time title="创建时间：2019-09-12 14:39:55 / 修改时间：20:44:13" itemprop="dateCreated datePublished" datetime="2019-09-12T14:39:55+08:00">2019-09-12</time>
             </span>
           
             
@@ -328,32 +328,31 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="参考博文："><a href="#参考博文：" class="headerlink" title="参考博文："></a>参考博文：</h3><a id="more"></a>
-<p>​    制作img镜像文件的5种方法：<a href="https://blog.csdn.net/sunjing_/article/details/78781411" target="_blank" rel="noopener">https://blog.csdn.net/sunjing_/article/details/78781411</a></p>
-<h4 id="1、在自己制作的软盘上显示hello-word"><a href="#1、在自己制作的软盘上显示hello-word" class="headerlink" title="1、在自己制作的软盘上显示hello word"></a>1、在自己制作的软盘上显示hello word</h4><p>​    显示结果：</p>
+        <h4 id="1、在自己制作的软盘上显示hello-word"><a href="#1、在自己制作的软盘上显示hello-word" class="headerlink" title="1、在自己制作的软盘上显示hello word"></a>1、在自己制作的软盘上显示hello word</h4><p>​    显示结果：</p>
 <p><img src="https://s2.ax1x.com/2019/09/12/nBBFqU.png" alt="nBBFqU.png"></p>
+<a id="more"></a>
+
 <p>​    系统：liunx</p>
 <p>​    软件：nasm    安装：sudo apt-get install nasm</p>
-<h4 id="2、开始操作"><a href="#2、开始操作" class="headerlink" title="2、开始操作"></a>2、开始操作</h4><p>​    1、创建boot.asm文件    命令：sudo nano boot.asm</p>
-<p>​    输入以下代码：</p>
+<h4 id="2、开始操作"><a href="#2、开始操作" class="headerlink" title="2、开始操作"></a>2、开始操作</h4><h5 id="1、创建boot-asm文件-命令：sudo-nano-boot-asm"><a href="#1、创建boot-asm文件-命令：sudo-nano-boot-asm" class="headerlink" title="1、创建boot.asm文件    命令：sudo nano boot.asm"></a>1、创建boot.asm文件    命令：sudo nano boot.asm</h5><p>​    输入以下代码：</p>
 <figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">org		<span class="number">07c00h</span></span><br><span class="line"><span class="keyword">mov</span>		<span class="built_in">ax</span>,	<span class="built_in">cs</span></span><br><span class="line"><span class="keyword">mov</span>		<span class="built_in">ds</span>,	<span class="built_in">ax</span></span><br><span class="line"><span class="keyword">mov</span>		<span class="built_in">es</span>,	<span class="built_in">ax</span></span><br><span class="line"><span class="keyword">call</span>	DispSrt</span><br><span class="line"><span class="keyword">jmp</span>		$</span><br><span class="line"><span class="symbol">DispSrt:</span></span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">ax</span>,	BootMessage</span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">bp</span>,	<span class="built_in">ax</span></span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">cx</span>,	<span class="number">16</span></span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">ax</span>,	<span class="number">01301h</span></span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">bx</span>,	<span class="number">000ch</span></span><br><span class="line">	<span class="keyword">mov</span>		<span class="built_in">dl</span>,	<span class="number">0</span></span><br><span class="line">	<span class="keyword">int</span>		<span class="number">10h</span></span><br><span class="line">	<span class="keyword">ret</span></span><br><span class="line"><span class="symbol">BootMessage:</span>		<span class="built_in">db</span>	<span class="string">"Hello word os  !"</span></span><br><span class="line"><span class="built_in">times</span>	<span class="number">510</span>-($-$$)	<span class="built_in">db</span>	<span class="number">0</span></span><br><span class="line"><span class="built_in">dw</span>		<span class="number">0xaa55</span></span><br></pre></td></tr></table></figure>
 
 <p>​        保存退出：Ctrl+x </p>
-<p>​    2、将boot.asm编译为二进制文件boot.bin    命令：nasm boot.asm -o boot.bin</p>
+<h5 id="2、将boot-asm编译为二进制文件boot-bin"><a href="#2、将boot-asm编译为二进制文件boot-bin" class="headerlink" title="2、将boot.asm编译为二进制文件boot.bin"></a>2、将boot.asm编译为二进制文件boot.bin</h5><p>​            命令：nasm boot.asm -o boot.bin</p>
 <p>​          备注：二进制文件查看器：xxd与od</p>
 <p>​            操作方式：xxd 参数  文件名</p>
 <p><img src="https://s2.ax1x.com/2019/09/12/nBBirT.png" alt="网站挂了，找不到图片了"></p>
 <p>​                       od   参数  文件名</p>
 <p><img src="https://s2.ax1x.com/2019/09/12/nBBPMV.png" alt="网站挂了，找不到图片了"></p>
-<p>​    3、创建软盘，并将二进制boot.bin文件写入软盘</p>
-<p>​    命令：</p>
+<h5 id="3、创建软盘，并将二进制boot-bin文件写入软盘"><a href="#3、创建软盘，并将二进制boot-bin文件写入软盘" class="headerlink" title="3、创建软盘，并将二进制boot.bin文件写入软盘"></a>3、创建软盘，并将二进制boot.bin文件写入软盘</h5><p>​    命令：</p>
 <p>​        a. 制作软盘镜像文件diska.img</p>
 <p>​             dd if=/dev/zero of=diska.img  bs=512  count=2880        </p>
 <p>​        b. 复制boot.bin到boot.img中</p>
 <p>​             dd if=boot.bin of=boot.img    bs=512   count=1</p>
 <p>​        c. 复制diska.img中从第512字节往后的内容添加到boot.img中（这是dd最出彩的部分）</p>
 <p>​            dd if=diska.img of=boot.img   skip=1    seek=1  bs=512  count=2879</p>
-<p>​        </p>
+<h4 id="参考博文："><a href="#参考博文：" class="headerlink" title="参考博文："></a>参考博文：</h4><p>​    制作img镜像文件的5种方法</p>
+<p>​    地址：<a href="https://blog.csdn.net/sunjing_/article/details/78781411" target="_blank" rel="noopener">https://blog.csdn.net/sunjing_/article/details/78781411</a></p>
 
     </div>
 
@@ -442,7 +441,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#参考博文："><span class="nav-number">1.</span> <span class="nav-text">参考博文：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、在自己制作的软盘上显示hello-word"><span class="nav-number">1.1.</span> <span class="nav-text">1、在自己制作的软盘上显示hello word</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、开始操作"><span class="nav-number">1.2.</span> <span class="nav-text">2、开始操作</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、在自己制作的软盘上显示hello-word"><span class="nav-number">1.</span> <span class="nav-text">1、在自己制作的软盘上显示hello word</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、开始操作"><span class="nav-number">2.</span> <span class="nav-text">2、开始操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、创建boot-asm文件-命令：sudo-nano-boot-asm"><span class="nav-number">2.1.</span> <span class="nav-text">1、创建boot.asm文件    命令：sudo nano boot.asm</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、将boot-asm编译为二进制文件boot-bin"><span class="nav-number">2.2.</span> <span class="nav-text">2、将boot.asm编译为二进制文件boot.bin</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、创建软盘，并将二进制boot-bin文件写入软盘"><span class="nav-number">2.3.</span> <span class="nav-text">3、创建软盘，并将二进制boot.bin文件写入软盘</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考博文："><span class="nav-number">3.</span> <span class="nav-text">参考博文：</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -457,7 +456,7 @@
         
           <a href="/prosonalblog/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -483,7 +482,7 @@
             <a href="/prosonalblog/tags/">
           
         
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo-添加Live2d看板动画]]></title>
+    <url>%2Fprosonalblog%2F2019%2F09%2F12%2Fhexo-%E6%B7%BB%E5%8A%A0Live2d%E7%9C%8B%E6%9D%BF%E5%8A%A8%E7%94%BB%2F</url>
+    <content type="text"><![CDATA[1、安装相关依赖1npm install --save hexo-helper-live2d 安装成功后，你可以在你的博客根文件夹/node_modules/底下找到live2d-widget这个文件夹。 2.安装你想要的live2d动画小人、小狗…1npm install live2d-widget-model-haru live2d-widget-model-haru这个是一个动画的样式model，你可以在网上搜到很多。 安装成功后，你可以在你的博客根文件夹/node_modules/底下找到live2d-widget-model-haru这个文件夹。这里很多model供你选择，这里可以动画预览或者你可以自己再找找。 3.修改主配置文件（根目录下）_config.yml在主配置文件（根目录下）_config.yml中添加 123456789101112131415161718192021222324252627# 7.live2d配置宠物live2d: # 当enable 为true的时候，会启用yaliya主题自带宠物shizuku,橘头发小姐姐，而且不可以配置位置，所以需要讲enable注释掉 # enable: true scriptFrom: local pluginRootPath: live2dw/ pluginJsPath: lib/ pluginModelPath: assets/ model: # live2d-widget-model-wanko 是一只趴在碗里的狗狗 use: live2d-widget-model-wanko # 通过修改use来确定使用哪种model # hibiki 是一个御姐 # use: live2d-widget-model-hibiki # haruto 海军服女孩，有点难看 # use: live2d-widget-model-haruto display: position: left width: 150 height: 300 # 一个比较可爱的位置 # hOffset: 200 # vOffset: -100 # 第二个位置配置，这个在左侧边栏位置很居中 hOffset: 80 # 调节水平位置 vOffset: -50 # 调节垂直位置 mobile: show: false 4.yaliya 主题中的一个小坑yaliya 主题本身已经配置了一个live2d,当你在主配置文件（根目录下）_config.yml中添加： 12live2d: enable: true 当enable 为true的时候，会启用yaliya主题自带宠物shizuku,橘头发小姐姐，而且不可以配置位置，需要你自己去修改css等，比较麻烦，所以需要将将enable注释掉(网上教学会带上这个参数，自己弄了一小会儿才搞明白的) 5.最后布置上线先进行线下测试： 1hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 访问localhost:4000来进行测试，成功后，上线： 1hexo clean &amp;&amp; hexo g &amp;&amp; hexo d 博客地址： hexo-添加Live2d看板动画： 地址：https://wzxjayce.github.io/2019/04/08/0011-hexo%E6%B7%BB%E5%8A%A0live2d/]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[markdown语法高亮标记]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F12%2Fmarkdown%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E6%A0%87%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[参考博文： ​ Markdown使用之CSDN支持语法高亮的常用语言：https://blog.csdn.net/yxys01/article/details/78296526 语言名 关键字 Bash bash C++ cpp C# csharp CSS css Java java JavaScript javascript JSON json Objective-C objectivec Perl perl Python python Ruby ruby SQL sql XML xml]]></content>
+    <content type="text"><![CDATA[语言名 关键字 Bash bash C++ cpp C# csharp CSS css Java java JavaScript javascript JSON json Objective-C objectivec Perl perl Python python Ruby ruby SQL sql XML xml 参考博文：​ Markdown使用之CSDN支持语法高亮的常用语言： ​ 地址：https://blog.csdn.net/yxys01/article/details/78296526]]></content>
       <categories>
         <category>markdown操作</category>
       </categories>
@@ -15,7 +26,7 @@
   <entry>
     <title><![CDATA[自制操作系统]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F12%2F%E8%87%AA%E5%88%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%2F</url>
-    <content type="text"><![CDATA[参考博文： ​ 制作img镜像文件的5种方法：https://blog.csdn.net/sunjing_/article/details/78781411 1、在自己制作的软盘上显示hello word​ 显示结果： ​ 系统：liunx ​ 软件：nasm 安装：sudo apt-get install nasm 2、开始操作​ 1、创建boot.asm文件 命令：sudo nano boot.asm ​ 输入以下代码： 123456789101112131415161718org 07c00hmov ax, csmov ds, axmov es, axcall DispSrtjmp $DispSrt: mov ax, BootMessage mov bp, ax mov cx, 16 mov ax, 01301h mov bx, 000ch mov dl, 0 int 10h retBootMessage: db "Hello word os !"times 510-($-$$) db 0dw 0xaa55 ​ 保存退出：Ctrl+x ​ 2、将boot.asm编译为二进制文件boot.bin 命令：nasm boot.asm -o boot.bin ​ 备注：二进制文件查看器：xxd与od ​ 操作方式：xxd 参数 文件名 ​ od 参数 文件名 ​ 3、创建软盘，并将二进制boot.bin文件写入软盘 ​ 命令： ​ a. 制作软盘镜像文件diska.img ​ dd if=/dev/zero of=diska.img bs=512 count=2880 ​ b. 复制boot.bin到boot.img中 ​ dd if=boot.bin of=boot.img bs=512 count=1 ​ c. 复制diska.img中从第512字节往后的内容添加到boot.img中（这是dd最出彩的部分） ​ dd if=diska.img of=boot.img skip=1 seek=1 bs=512 count=2879 ​]]></content>
+    <content type="text"><![CDATA[1、在自己制作的软盘上显示hello word​ 显示结果： ​ 系统：liunx ​ 软件：nasm 安装：sudo apt-get install nasm 2、开始操作1、创建boot.asm文件 命令：sudo nano boot.asm​ 输入以下代码： 123456789101112131415161718org 07c00hmov ax, csmov ds, axmov es, axcall DispSrtjmp $DispSrt: mov ax, BootMessage mov bp, ax mov cx, 16 mov ax, 01301h mov bx, 000ch mov dl, 0 int 10h retBootMessage: db "Hello word os !"times 510-($-$$) db 0dw 0xaa55 ​ 保存退出：Ctrl+x 2、将boot.asm编译为二进制文件boot.bin​ 命令：nasm boot.asm -o boot.bin ​ 备注：二进制文件查看器：xxd与od ​ 操作方式：xxd 参数 文件名 ​ od 参数 文件名 3、创建软盘，并将二进制boot.bin文件写入软盘​ 命令： ​ a. 制作软盘镜像文件diska.img ​ dd if=/dev/zero of=diska.img bs=512 count=2880 ​ b. 复制boot.bin到boot.img中 ​ dd if=boot.bin of=boot.img bs=512 count=1 ​ c. 复制diska.img中从第512字节往后的内容添加到boot.img中（这是dd最出彩的部分） ​ dd if=diska.img of=boot.img skip=1 seek=1 bs=512 count=2879 参考博文：​ 制作img镜像文件的5种方法 ​ 地址：https://blog.csdn.net/sunjing_/article/details/78781411]]></content>
       <categories>
         <category>操作系统</category>
       </categories>
@@ -27,7 +38,7 @@
   <entry>
     <title><![CDATA[win10mac地址修改]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F11%2Fwin10mac%E5%9C%B0%E5%9D%80%E4%BF%AE%E6%94%B9%2F</url>
-    <content type="text"><![CDATA[1、注册表修改 win+r 输入regedit 2、定位文件 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class{4D36E972-E325-11CE-BFC1-08002bE10318} 3、以下图为例，每个00XX的代号都代表一个网卡（下图中除了0004，都是虚拟网卡），要想分辨出你想要的网卡型号，得在点击编号后，在右侧的DriverDesc值中确定型号，如下图 —— 4、确定好网卡，就在这个网卡的项目中新建一个字符串值，命名为NetworkAddress，内容是新的MAC地址，如下图 —— 5、点击“确定”后修改完毕，此时需要重启连接进行验证。可以在相应的“网络连接”中单击右键，选择“禁用”，然后再点击“启用”即可，如下图 —— 6、此时可以查看一下新的地址，如下图 —— 7、引用博文如下​ win10mac地址修改的五种方法：https://blog.csdn.net/zp357252539/article/details/7352800]]></content>
+    <content type="text"><![CDATA[1、注册表修改 win+r 输入regedit 2、定位文件 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class{4D36E972-E325-11CE-BFC1-08002bE10318} 3、以下图为例，每个00XX的代号都代表一个网卡（下图中除了0004，都是虚拟网卡），要想分辨出你想要的网卡型号，得在点击编号后，在右侧的DriverDesc值中确定型号，如下图 —— 4、确定好网卡，就在这个网卡的项目中新建一个字符串值，命名为NetworkAddress，内容是新的MAC地址，如下图 —— 5、点击“确定”后修改完毕，此时需要重启连接进行验证。可以在相应的“网络连接”中单击右键，选择“禁用”，然后再点击“启用”即可，如下图 —— 6、此时可以查看一下新的地址，如下图 —— 引用博文​ win10mac地址修改的五种方法 ​ 地址：https://blog.csdn.net/zp357252539/article/details/7352800]]></content>
       <categories>
         <category>windows</category>
       </categories>
@@ -39,7 +50,7 @@
   <entry>
     <title><![CDATA[markdownpad之next操作]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F10%2Fmarkdownpad%E4%B9%8Bnext%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[参考博文： ​ typora 强大的markdown显示器 实时显示：https://blog.csdn.net/jun8148/article/details/83003876 1、基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 2、添加表格表格 快捷键 ctrl+t 或 12345|姓名|性别|毕业学校|工资||:---|:---:|:---:|---:||杨洋|男|重庆交通大学|3200||峰哥|男|贵州大学|5000||坑货|女|北京大学|2000| 姓名 性别 毕业学校 工资 杨洋 男 重庆交通大学 3200 峰哥 男 贵州大学 5000 坑货 女 北京大学 2000 3、添加tags（标签）​ hexo文章分类操作 1234标签： - tag_1 - tag_2 - tag_n 4、Hexo引用站内文章​ 使用Hexo内置的标签插件（Tag Plugins）中的post_link来实现 ​ 用法： 1&#123;% post_link slug [title] %&#125; ​ 其中slug就是_posts文件夹下需要引用的文章的markdown文件的名字，title可以指定引用的文章需要显示的名字。 例子： 例如，使用Hexo搭建Blog这篇文章的markdown名字为hexo-github-blog.md 那么在需要引用的markown源文件中，输入如下标记的时候 12- &#123;% post_link hexo-github-blog %&#125;- &#123;% post_link hexo-github-blog 显示的名字 %&#125; 页面显示效果如下: 使用Hexo搭建Blog 显示的名字]]></content>
+    <content type="text"><![CDATA[1、基本操作 a.添加同个shift+空格，切换为全角模式 b.添加图片 c.添加视频 2、添加表格表格 快捷键 ctrl+t 或 12345|姓名|性别|毕业学校|工资||:---|:---:|:---:|---:||杨洋|男|重庆交通大学|3200||峰哥|男|贵州大学|5000||坑货|女|北京大学|2000| 姓名 性别 毕业学校 工资 杨洋 男 重庆交通大学 3200 峰哥 男 贵州大学 5000 坑货 女 北京大学 2000 3、添加tags（标签）​ hexo文章分类操作 1234标签： - tag_1 - tag_2 - tag_n 4、Hexo引用站内文章​ 使用Hexo内置的标签插件（Tag Plugins）中的post_link来实现 ​ 用法： 1&#123;% post_link slug [title] %&#125; ​ 其中slug就是_posts文件夹下需要引用的文章的markdown文件的名字，title可以指定引用的文章需要显示的名字。 例子： 例如，使用Hexo搭建Blog这篇文章的markdown名字为hexo-github-blog.md 那么在需要引用的markown源文件中，输入如下标记的时候 12- &#123;% post_link hexo-github-blog %&#125;- &#123;% post_link hexo-github-blog 显示的名字 %&#125; 页面显示效果如下: 使用Hexo搭建Blog 显示的名字 参考博文：​ typora 强大的markdown显示器 实时显示： ​ 地址：https://blog.csdn.net/jun8148/article/details/83003876]]></content>
       <categories>
         <category>markdown操作</category>
       </categories>
@@ -60,7 +71,7 @@
   <entry>
     <title><![CDATA[next主题设定代码高亮格式]]></title>
     <url>%2Fprosonalblog%2F2018%2F03%2F02%2Fnext%E4%B8%BB%E9%A2%98%E8%AE%BE%E5%AE%9A%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%A0%BC%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[next主题设定代码高亮格式 备注： 主题的_config.yml文件 站点的_config.yml文件 代码块的语言标注 a、主目录配置主目录中，搜索heightlight： 12345highlight: enable: true //原来为false line_number: true auto_detect: true tab_replace: 文字自动检测默认不启动，所以改成true使其起作用。 b、主题的配置文件​ 找到：highlight_theme: normal，注释显示有五种显示主题可用，分别是： normal night night eighties night blue night bright ​ 此时，还不能解决高亮问题，虽然背景会变，但是文字并没起作用 可以使用代码块注释 c、代码块注释```Python 语言名 code here ``` 代码块注释可参考：markdown语法高亮标记]]></content>
+    <content type="text"><![CDATA[a、主目录配置主目录中，搜索heightlight： 12345highlight: enable: true //原来为false line_number: true auto_detect: true tab_replace: 文字自动检测默认不启动，所以改成true使其起作用。 备注： 主题的_config.yml文件 站点的_config.yml文件 代码块的语言标注 b、主题的配置文件​ 找到：highlight_theme: normal，注释显示有五种显示主题可用，分别是： normal night night eighties night blue night bright ​ 此时，还不能解决高亮问题，虽然背景会变，但是文字并没起作用 可以使用代码块注释 c、代码块注释```Python 语言名 code here ``` 代码块注释可参考：markdown语法高亮标记]]></content>
       <categories>
         <category>hexo</category>
       </categories>
