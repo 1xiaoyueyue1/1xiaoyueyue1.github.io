@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexoxo_next主题配置]]></title>
+    <url>%2Fprosonalblog%2F2019%2F09%2F13%2Fhexoxo-next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[1、隐藏网页底部的强力驱动​ a、设置文件 blog/themes/next/layout_partials/foot/footer.swig ​ 将这段文字注销掉（添加），改为 2、]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexoxo添加码云密钥]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F13%2Fhexoxo%E6%B7%BB%E5%8A%A0%E7%A0%81%E4%BA%91%E5%AF%86%E9%92%A5%2F</url>
     <content type="text"><![CDATA[1、码云上的操作​ a、在克隆/下载中，复制HTTPS里的链接 ​ b、找到Blog本地的根目录里的_config.yml文件，找到deploy这一项，将之前复制的HTTPS里的链接复制到repo后面，然后修改type的值为git，然后保存即可。 2、git上的操作1.在Blog根目录单击右键，选择Git Bash here git bash就是模拟出来的小型Linux命令行 2.如果是第一次使用git的话，要先配置一下我们git的基本信息 12$ git config --global user.name+空格+你的名字(最好和码云的一样)$ git config --global user.email+空格+你的邮箱(最好和码云的一样) 例如： git config –global user.name “名字” ​ git config –global user.email “邮箱地址” 3、配置SSH1、你可以按如下命令来生成 sshkey: 12ssh-keygen -t rsa -C "xxxxx@xxxxx.com" # Generating public/private rsa key pair.. 2、按照提示完成三次回车，即可生成 ssh key。通过查看 ~/.ssh/id_rsa.pub 文件内容，获取到你的 public key 12cat ~/.ssh/id_rsa.pub# ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc.... 3、复制生成后的 ssh key，通过仓库主页 「管理」-&gt;「部署公钥管理」-&gt;「添加部署公钥」 ，添加生成的 public key 添加到仓库中 添加后，在终端（Terminal）中输入 1ssh -T git@gitee.com 4、首次使用需要确认并添加主机到本机SSH可信列表。若返回 Hi XXX! You&#39;ve successfully authenticated, but Gitee.com does not provide shell access. 内容，则证明添加成功。 配置多个SSH-Key1、生成一个gitee用的SSH-Key 1$ ssh-keygen -t rsa -C 'xxxxx@company.com' -f ~/.ssh/gitee_id_rsa 2、生成一个github用的SSH-Key 1$ ssh-keygen -t rsa -C 'xxxxx@qq.com' -f ~/.ssh/github_id_rsa 3、在 ~/.ssh 目录下新建一个config文件，添加如下内容（其中Host和HostName填写git服务器的域名，IdentityFile指定私钥的路径） 12345678910# giteeHost gitee.comHostName gitee.comPreferredAuthentications publickeyIdentityFile ~/.ssh/gitee_id_rsa# githubHost github.comHostName github.comPreferredAuthentications publickeyIdentityFile ~/.ssh/github_id_rsa 4.用ssh命令分别测试 12$ ssh -T git@gitee.com$ ssh -T git@github.com 参考博文: ​ Hexo+码云+git快速搭建免费的静态Blog ​ 官方生成/添加SSH公钥教程]]></content>
