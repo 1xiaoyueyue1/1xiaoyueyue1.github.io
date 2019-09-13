@@ -19,6 +19,8 @@
 
 
 <link rel="stylesheet" href="/prosonalblog/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/prosonalblog/lib/pace/pace-theme-center-circle.min.css?v=1.0.2">
+  <script src="/prosonalblog/lib/pace/pace.min.js?v=1.0.2"></script>
 
 
 <script id="hexo-configurations">
@@ -55,20 +57,21 @@
   };
 </script>
 
-  <meta name="description" content="1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/footer.swig">
+  <meta name="description" content="要用的配置文件 主配置文件：config.yml               ~/_config.yml/ 主题配置文件：_config.yml        ~/themes/next/_config.yml    #这里使用的是next主题 代码块的语言标注  1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/f">
 <meta name="keywords" content="hexo,next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexoxo_next主题配置">
 <meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2019/09/13/hexoxo-next主题配置/index.html">
 <meta property="og:site_name" content="myblog">
-<meta property="og:description" content="1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/footer.swig">
+<meta property="og:description" content="要用的配置文件 主配置文件：config.yml               ~/_config.yml/ 主题配置文件：_config.yml        ~/themes/next/_config.yml    #这里使用的是next主题 代码块的语言标注  1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/f">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/13/nrUPS0.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/13/nrU9Wq.png">
-<meta property="og:updated_time" content="2019-09-13T05:23:21.598Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/09/13/nrwBX6.png">
+<meta property="og:updated_time" content="2019-09-13T05:52:41.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexoxo_next主题配置">
-<meta name="twitter:description" content="1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/footer.swig">
+<meta name="twitter:description" content="要用的配置文件 主配置文件：config.yml               ~/_config.yml/ 主题配置文件：_config.yml        ~/themes/next/_config.yml    #这里使用的是next主题 代码块的语言标注  1、隐藏网页底部的强力驱动​    a、设置文件    blog/themes/next/layout_partials/foot/f">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/09/13/nrUPS0.png">
   <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2019/09/13/hexoxo-next主题配置/">
 
@@ -287,7 +290,7 @@
                 
               
 
-              <time title="创建时间：2019-09-13 12:54:35 / 修改时间：13:23:21" itemprop="dateCreated datePublished" datetime="2019-09-13T12:54:35+08:00">2019-09-13</time>
+              <time title="创建时间：2019-09-13 12:54:35 / 修改时间：13:52:41" itemprop="dateCreated datePublished" datetime="2019-09-13T12:54:35+08:00">2019-09-13</time>
             </span>
           
             
@@ -327,16 +330,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="1、隐藏网页底部的强力驱动"><a href="#1、隐藏网页底部的强力驱动" class="headerlink" title="1、隐藏网页底部的强力驱动"></a>1、隐藏网页底部的强力驱动</h4><p>​    a、设置文件    blog/themes/next/layout_partials/foot/footer.swig</p>
+        <h2 id="要用的配置文件"><a href="#要用的配置文件" class="headerlink" title="要用的配置文件"></a>要用的配置文件</h2><ul>
+<li>主配置文件：<code>config.yml</code>               ~/_config.yml/</li>
+<li>主题配置文件：<code>_config.yml</code>        ~/themes/next/_config.yml    #这里使用的是next主题</li>
+<li>代码块的语言标注</li>
+</ul>
+<h4 id="1、隐藏网页底部的强力驱动"><a href="#1、隐藏网页底部的强力驱动" class="headerlink" title="1、隐藏网页底部的强力驱动"></a>1、隐藏网页底部的强力驱动</h4><p>​    a、设置文件    blog/themes/next/layout_partials/foot/footer.swig</p>
 <img src="https://s2.ax1x.com/2019/09/13/nrUPS0.png" alt="nrUPS0.png" border="0">
 
 <a id="more"></a>
-<p>​    将这段文字注销掉（添加<!-- -->），改为</p>
+<p>​    b、将这段文字注销掉（添加<!-- -->），改为</p>
 <img src="https://s2.ax1x.com/2019/09/13/nrU9Wq.png" alt="nrU9Wq.png" border="0">
 
 
 
-<h4 id="2、"><a href="#2、" class="headerlink" title="2、"></a>2、</h4>
+<h4 id="2、增加加载功能"><a href="#2、增加加载功能" class="headerlink" title="2、增加加载功能"></a>2、增加加载功能</h4><p>​    a、主题配置文件里面查找pace，将pace里的false改为true</p>
+<img src="https://s2.ax1x.com/2019/09/13/nrwBX6.png" alt="nrwBX6.png" border="0">
+
+<p>​    选择 themes list里的主题</p>
+<p>​    例如：enable：true</p>
+<p>​           theme：big-counter</p>
+<h4 id="3、"><a href="#3、" class="headerlink" title="3、"></a>3、</h4>
     </div>
 
     
@@ -363,8 +377,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/prosonalblog/2019/09/13/hexoxo添加码云密钥/" rel="next" title="hexoxo添加码云密钥">
-                  <i class="fa fa-chevron-left"></i> hexoxo添加码云密钥
+                <a href="/prosonalblog/2019/09/13/hexoxo添加码云密钥/" rel="next" title="hexo添加码云密钥">
+                  <i class="fa fa-chevron-left"></i> hexo添加码云密钥
                 </a>
               
             </div>
@@ -420,7 +434,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、隐藏网页底部的强力驱动"><span class="nav-number">1.</span> <span class="nav-text">1、隐藏网页底部的强力驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、"><span class="nav-number">2.</span> <span class="nav-text">2、</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#要用的配置文件"><span class="nav-number">1.</span> <span class="nav-text">要用的配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、隐藏网页底部的强力驱动"><span class="nav-number">1.0.1.</span> <span class="nav-text">1、隐藏网页底部的强力驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、增加加载功能"><span class="nav-number">1.0.2.</span> <span class="nav-text">2、增加加载功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、"><span class="nav-number">1.0.3.</span> <span class="nav-text">3、</span></a></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -489,7 +503,7 @@
   <span class="author" itemprop="copyrightHolder">xueyue</span>
 </div>
 
-<!--
+ <!--
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.0</div> -->
@@ -573,6 +587,12 @@
   
 
   
+
+
+
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/src/fireworks.js"></script>
 
 <script src="/prosonalblog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/prosonalblog/live2dw/assets/tsumiki.model.json"},"display":{"position":"right","width":250,"height":400,"hOffset":-30},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
