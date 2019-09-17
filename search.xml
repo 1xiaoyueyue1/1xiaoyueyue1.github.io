@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[PSW的使用]]></title>
+    <url>%2Fprosonalblog%2F2019%2F09%2F16%2FPSW%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​ psw是一个8—位—寄存器：一个字节等于8位 位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0 位标志 CY AC F0 RS1 RS0 OV / P 备注：CY：进制位​ 最高位，有进位CY=1,无进位CY=0​ 例如：1000,0000 + 1000,0000 = 0000,0000 CY = 1 AC：半进制位​ 第4位，有进位AC=1，无进位AC=0​ 例如：0000,1000 + 0000,1000 = 0001,0000 CY = 0, AC = 1 F0：用户标志位RS1和RS0：寄存器组选择位​ 寄存器选择：如表 RS0 RS1 寄存器 R0 ~ R7地址 0 0 第0组 00 ~ 07H 0 1 第1组 08 ~ OFH 1 0 第2组 10 ~ 17H 1 1 第3组 18 ~ 1FH 备注：一共128个字节，00 ~ 7FH 00 ~ 1FH：存储区 32个字节 20 ~ 2FH：位寻址区 16个字节 即可以操作位又可以操作字节 30 ~ 7FH：用户RAM区 80个字节 OV：溢出标志位P：奇、偶标志位​ 得出结果，如果是奇数P=1，如果是偶数P=0 ​ 例如：0010,0000 + 0100,0010 = 0110,0010 则 P = 1 总结：12345mov Ax，#64H ADD AX，#DEH //得出结果为：142H 0110 0100 + 1101 1110 = 1 0000 0010AX = 42H CY = 1 AC = 1 OV = 1]]></content>
+      <categories>
+        <category>汇编</category>
+      </categories>
+      <tags>
+        <tag>汇编</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexoxo_next主题配置]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F13%2Fhexoxo-next%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[要用的配置文件 主配置文件：config.yml ~/_config.yml/ 主题配置文件：_config.yml ~/themes/next/_config.yml #这里使用的是next主题 代码块的语言标注 1、隐藏网页底部的强力驱动​ a、设置文件 blog/themes/next/layout_partials/foot/footer.swig ​ b、将这段文字注销掉（添加），改为 2、增加加载功能​ a、主题配置文件里面查找pace，将pace里的false改为true ​ 选择 themes list里的主题 ​ 例如：enable：true ​ theme：big-counter 3、]]></content>
@@ -42,8 +53,8 @@
         <category>markdown操作</category>
       </categories>
       <tags>
-        <tag>markdown</tag>
         <tag>汇编</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -54,8 +65,8 @@
         <category>操作系统</category>
       </categories>
       <tags>
-        <tag>笔记</tag>
         <tag>汇编</tag>
+        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>

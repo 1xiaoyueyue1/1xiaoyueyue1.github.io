@@ -346,15 +346,15 @@
 <p>git bash就是模拟出来的小型Linux命令行</p>
 </blockquote>
 <p>2.如果是第一次使用git的话，要先配置一下我们git的基本信息</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> git config --global user.name+空格+你的名字(最好和码云的一样)</span><br><span class="line"><span class="meta">$</span> git config --global user.email+空格+你的邮箱(最好和码云的一样)</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name+空格+你的名字(最好和码云的一样)</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email+空格+你的邮箱(最好和码云的一样)</span></span><br></pre></td></tr></table></figure>
 
 <p>例如：    git config –global user.name “名字”</p>
 <p>​        git config –global user.email  “邮箱地址”</p>
 <h3 id="3、配置SSH"><a href="#3、配置SSH" class="headerlink" title="3、配置SSH"></a>3、配置SSH</h3><p>1、你可以按如下命令来生成 sshkey:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "xxxxx@xxxxx.com"  </span><br><span class="line"><span class="meta">#</span> Generating public/private rsa key pair..</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "xxxxx@xxxxx.com"  </span><br><span class="line"><span class="meta">#</span><span class="bash"> Generating public/private rsa key pair..</span></span><br></pre></td></tr></table></figure>
 
 <p>2、按照提示完成三次回车，即可生成 ssh key。通过查看 <code>~/.ssh/id_rsa.pub</code> 文件内容，获取到你的 public key</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"><span class="meta">#</span> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br><span class="line"><span class="meta">#</span><span class="bash"> ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....</span></span><br></pre></td></tr></table></figure>
 
 <img src="https://s2.ax1x.com/2019/09/13/nr1OU0.png" alt="nr1OU0.png" border="0">
 
@@ -490,7 +490,7 @@
         
           <a href="/prosonalblog/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -503,7 +503,7 @@
             <a href="/prosonalblog/categories/">
           
         
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>

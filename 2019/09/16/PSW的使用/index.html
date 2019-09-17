@@ -57,14 +57,19 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="myblog">
-<meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/tags/next/index.html">
+  <meta name="description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
+<meta name="keywords" content="汇编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PSW的使用">
+<meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2019/09/16/PSW的使用/index.html">
 <meta property="og:site_name" content="myblog">
+<meta property="og:description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-16T06:02:16.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="myblog">
-  <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/tags/next/">
+<meta name="twitter:title" content="PSW的使用">
+<meta name="twitter:description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
+  <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2019/09/16/PSW的使用/">
 
 
 <script id="page-configurations">
@@ -72,13 +77,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: next | myblog</title>
+  <title>PSW的使用 | myblog</title>
   
 
 
@@ -244,84 +249,210 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block tag">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">next<small>标签</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2019/09/16/PSW的使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xueyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/prosonalblog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="myblog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">PSW的使用
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-16 12:37:21 / 修改时间：14:02:16" itemprop="dateCreated datePublished" datetime="2019-09-16T12:37:21+08:00">2019-09-16</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/prosonalblog/categories/汇编/" itemprop="url" rel="index"><span itemprop="name">汇编</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <h3 id="pws是什么"><a href="#pws是什么" class="headerlink" title="pws是什么"></a>pws是什么</h3><p>psw：又名程序状态字节。英文名称：Program Statu Word</p>
+<p>​    psw是一个<strong>8—位—寄存器</strong>：一个字节等于8位</p>
+<table>
+<thead>
+<tr>
+<th align="center">位序</th>
+<th align="center">PSW.7</th>
+<th align="center">PSW.6</th>
+<th align="center">PSW.5</th>
+<th align="center">PSW.4</th>
+<th align="center">PSW.3</th>
+<th align="center">PSW.2</th>
+<th align="center">PSW.1</th>
+<th align="center">PSW.0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">位标志</td>
+<td align="center">CY</td>
+<td align="center">AC</td>
+<td align="center">F0</td>
+<td align="center">RS1</td>
+<td align="center">RS0</td>
+<td align="center">OV</td>
+<td align="center">/</td>
+<td align="center">P</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
 
-  
-  
+<h4 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h4><h5 id="CY：进制位"><a href="#CY：进制位" class="headerlink" title="CY：进制位"></a><strong>CY</strong>：进制位</h5><p>​    最高位，有进位CY=1,无进位CY=0<br>​    例如：1000,0000 + 1000,0000 = 0000,0000    CY = 1</p>
+<h5 id="AC：半进制位"><a href="#AC：半进制位" class="headerlink" title="AC：半进制位"></a><strong>AC</strong>：半进制位</h5><p>​    第4位，有进位AC=1，无进位AC=0<br>​    例如：0000,1000 + 0000,1000 = 0001,0000    CY = 0,    AC = 1</p>
+<h5 id="F0：用户标志位"><a href="#F0：用户标志位" class="headerlink" title="F0：用户标志位"></a><strong>F0</strong>：用户标志位</h5><h5 id="RS1和RS0：寄存器组选择位"><a href="#RS1和RS0：寄存器组选择位" class="headerlink" title="RS1和RS0：寄存器组选择位"></a><strong>RS1和RS0</strong>：寄存器组选择位</h5><p>​    寄存器选择：如表</p>
+<table>
+<thead>
+<tr>
+<th align="center">RS0</th>
+<th align="center">RS1</th>
+<th align="center">寄存器</th>
+<th align="center">R0 ~ R7地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">第0组</td>
+<td align="center">00 ~ 07H</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">第1组</td>
+<td align="center">08 ~ OFH</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">第2组</td>
+<td align="center">10 ~ 17H</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">第3组</td>
+<td align="center">18 ~ 1FH</td>
+</tr>
+</tbody></table>
+<p>备注：一共128个字节，00 ~ 7FH</p>
+<ul>
+<li>00 ~ 1FH：存储区                32个字节</li>
+<li>20 ~ 2FH：位寻址区            16个字节<ul>
+<li>即可以操作<strong><em>位</em></strong>又可以操作<strong><em>字节</em></strong></li>
+</ul>
+</li>
+<li>30 ~ 7FH：用户RAM区            80个字节</li>
+</ul>
+<h5 id="OV：溢出标志位"><a href="#OV：溢出标志位" class="headerlink" title="OV：溢出标志位"></a><strong>OV</strong>：溢出标志位</h5><h5 id="P：奇、偶标志位"><a href="#P：奇、偶标志位" class="headerlink" title="P：奇、偶标志位"></a><strong>P</strong>：奇、偶标志位</h5><p>​    得出结果，如果是奇数P=1，如果是偶数P=0</p>
+<p>​    例如：0010,0000 + 0100,0010 = 0110,0010 则 P = 1</p>
+<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mov Ax，#64H </span><br><span class="line"></span><br><span class="line">ADD AX，#DEH 		//得出结果为：142H	 0110 0100 + 1101 1110 = 1 0000 0010</span><br><span class="line"></span><br><span class="line">AX =  42H	CY = 1	AC = 1	OV = 1</span><br></pre></td></tr></table></figure>
 
-  
+
+    </div>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/prosonalblog/2019/09/13/hexoxo-next主题配置/" itemprop="url">
-            <span itemprop="name">hexoxo_next主题配置</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/prosonalblog/tags/汇编/" rel="tag"># 汇编</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-13T12:54:35+08:00"
-              content="2019-09-13">
-          09-13
-        </time>
-      </div>
+        
 
-    </header>
-  </article>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/prosonalblog/2019/09/13/hexoxo-next主题配置/" rel="next" title="hexoxo_next主题配置">
+                  <i class="fa fa-chevron-left"></i> hexoxo_next主题配置
+                </a>
+              
+            </div>
 
+            <span class="post-nav-divider"></span>
 
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -340,6 +471,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -352,6 +488,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#pws是什么"><span class="nav-number">1.</span> <span class="nav-text">pws是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#备注："><span class="nav-number">1.1.</span> <span class="nav-text">备注：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CY：进制位"><span class="nav-number">1.1.1.</span> <span class="nav-text">CY：进制位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#AC：半进制位"><span class="nav-number">1.1.2.</span> <span class="nav-text">AC：半进制位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#F0：用户标志位"><span class="nav-number">1.1.3.</span> <span class="nav-text">F0：用户标志位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RS1和RS0：寄存器组选择位"><span class="nav-number">1.1.4.</span> <span class="nav-text">RS1和RS0：寄存器组选择位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#OV：溢出标志位"><span class="nav-number">1.1.5.</span> <span class="nav-text">OV：溢出标志位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#P：奇、偶标志位"><span class="nav-number">1.1.6.</span> <span class="nav-text">P：奇、偶标志位</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结："><span class="nav-number">2.</span> <span class="nav-text">总结：</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
