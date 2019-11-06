@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo常用操作]]></title>
+    <url>%2Fprosonalblog%2F2019%2F11%2F06%2Fhexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[1、hexo命令说明：12345678910hexo init # 新建一个网站hexo new "文章名" #新建文章hexo new page "页面名" #新建页面 hexo clean # 清除缓存文件（db.json和已生成的静态文件，尤其是更换主题后） hexo g # 生成静态文件hexo s # 启动hexo （上述两个指令需要在博客根目录下执行） hexo d # 部署到GitHub上（前提是已经添加SSH Key，设置好账户信息） 2、hexo 操作12345678910111213hexo help # 查看帮助hexo version #查看Hexo的版本hexo algolia # 更新search庫hexo new "postName" #新建文章hexo new post "title" # 生成新文章：\source\_posts\title.md，可省略posthexo new page "pageName"#新建页面hexo clean #清除部署緩存hexo n == hexo new #新建文章hexo g == hexo generate #生成静态页面至public目录hexo s == hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo d == hexo deploy #将.deploy目录部署到GitHubhexo d -g #生成加部署hexo s -g #生成加预览 3、部署12hexo cl #清理hexo d -g #创建并上 参考博客： ​ Hexo操作指南-（命令） ​ Hexo官方文档]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[动漫列表]]></title>
+    <url>%2Fprosonalblog%2F2019%2F11%2F06%2F%E7%95%AA%E5%89%A7%E5%88%97%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[[TOC] 最喜欢的动漫作家1.麻枝准2.宫崎骏 动漫类型情感、爱情(比较推荐)《clannad》(春)★《air》(秋)《雪之少女》(冬)《禁止恋爱的世界》《只有我不在的街道》《鲸鱼之子们在沙丘上歌唱》★《学生会长是女仆》《如果有妹妹就好了》《just because!》《彼子汽水》《徒然Children》《未闻花名》★《四月是你的谎言》★《花开物语》★《电波女与青春男》《我的青春恋爱物语》《末日时在做什么？有没有空？可以来拯救吗？》《月色真美》《欢迎来到实力至上的教室》《无论何时我们的恋爱都是十厘米》《夏洛特charlotte》★《好像告诉你》《罪恶王冠》★《litter busters》★《来自风平浪静的明天》《多田君不恋爱》《青春之旅》 黑暗《进击的巨人》《东京喰种》《寄生兽》《未来日记》★《魔法少女小圆》★《极黑的布伦希尔特》《pupa》《阿修罗》《妖精的旋律》 后宫《school day》《缘之空》《玩伴猫耳娘》《赤之约定》《to love》《天降之物》《轻吻姐姐》《鹡鸰女神》《校园默示录》《管家后宫学园》《最弱无败神装机龙》《三坪房间的侵略者》《我老婆是学生会长》《带着智能手机闯荡异世界》《不正经的魔术讲师与禁忌教典》《迷茫管家与懦弱的我》《爆肝工程师的异世界狂想曲》《CROSS ANGE 天使与龙的轮舞》 搞笑、日常、奇幻(放松心情)《笨蛋测验召唤兽》《天真与闪电》《在下坂本有何贵干》《迷途猫》《小埋》《青春波纹》《樱花庄的宠物女孩》《珈百璃的堕落》《小林家的龙女仆》《笨女孩》《charlotte》★《龙与虎》《伪恋》《绯弹的亚里亚》《恋爱随意链接》《零之使魔》★《寻找失去的未来》《守护甜心》《中二病也要谈恋爱》《angel beats》《境界的彼方》《擅长捉弄的高木同学》(9ed有小小恋歌) 电影《千与千寻》《声之形》《萤火之森》《心灵想要大声呼喊》《我想吃掉你的胰脏》 舞蹈歌曲音乐1.《轻音少女》★2.《love live》以及《love live!sunshine!!》★3.《风夏》4.《天使的3p》5.《偶像选举》(看了又像没看)5.《SHOW BY ROCK!!》6.《美妙旋律第三季》(第一部音乐番)7.《偶像法师》8.《普通女高中生要做当地偶像》9. 妹控番1.《如果有妹妹就好了》2.《我的妹妹不可能那么可爱》3.《游戏人生》★4.《埃罗芒阿老师》 不知怎么分的《伪恋》《约会大作战》《噬血狂袭》《公主恋人》《异世界食堂》(美食番)《游戏人生》(good)★《永生之酒》(经典啊)《命运石之门》★《因果日记》《玉子市场》《机械女仆》《某科学的超电磁炮》《终结的炽天使》《萝球社》(篮球的开端)《rewrite》《灰与幻想的格林姆迦尔》《潘多拉之心》《蓝兰岛漂流记》《金钱掌控》 加点电影、电视剧《小萝莉的猴神大叔》《我可能不会爱你》《使徒行者》《垫底辣妹》 2018年四月番1.刀剑神域GGO √2.魔法少女网站 √3.奴隶区:我与23个奴隶 √4.命运石之门第二季5.斗罗大陆6.斗破苍穹第二季 √7.东京食尸鬼第三季8.狐妖小红娘√ 七月番1.春原庄的管理员2.工作细胞3.杀戮的天使4.异世界魔王与召唤少女的奴隶魔术5.七星的昴星团6.百炼霸王与圣约女武神7.ISLAND8. 十月番1.来自缤纷世界的明天2.我喜欢的是妹妹但不是妹妹3.关于我转生变成史莱姆这档事4.青春猪头少年不会梦到兔女郎学姐5.哥布林杀手6.RELEASE THE SPYCE7.尤利西斯：贞德与炼金的骑士8.刀剑神域第三季9. 待看1.刚之练金术师2.滑头鬼之孙《生存家族》4.异世界的圣机师物语5.地球防卫少年6.《寄宿学校的朱丽叶》染红的街道7《空之境界》8、羁绊者9、幻想万华镜 2019年四月番星期一：为什么老师会在这里、八月份棒球甜心、 星期二：在世界尽头咏唱恋曲、星期三：贤者之孙、盾勇、贤惠幼妻仙狐小姐、卡萝尔与星期二、星期四：少年歌行、星期五：八十龟酱观察日记、狐妖小红娘、星期六：淫乱的青酱不能学习、斗罗大陆、一个人的○○小日子、星期天：嗜血狂袭、消灭都市、女子高中生、我们无法一起学习、信长老师的年幼妻子 十月番星期一：我不是说了能力要平均值么 星期三：这个勇者明明超强却过分慎重（慎勇）、旗扬！兽道（兽勇） 星期四：刺客守则、超人高中生即便在异世界也能从容生存！、喜欢本大爷的竟然只有你一个？ 星期五：石纪元 星期六：站x恋、斗罗大陆 星期日：刀剑神域第三季part2、我们无法一起学习 出来的电影：天气之子 观看地址： ​ 妮可动漫]]></content>
+      <categories>
+        <category>动漫</category>
+      </categories>
+      <tags>
+        <tag>动漫</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python创建多个文件夹]]></title>
+    <url>%2Fprosonalblog%2F2019%2F09%2F18%2Fpython%E5%88%9B%E5%BB%BA%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%2F</url>
+    <content type="text"><![CDATA[1234567891011121314151617181920212223242526272829import osdef mkdir(path): #path = path.strip() #path = path.rstrip("\\") #判断目录是否存在 folder = os.path.exists(path) #判断结果 if not folder: #如果文件不存在，则建立文件 os.makedirs(path) print(path+'创建成功') return True else: #如果文件存在，则不创建，提示文件已存在 print(path+'文件以存在,创建失败') return Falsepath = './image/'#temp = input("输入要创建的文件：")pay = ['xiap','dd','dsad','ssss']for x in pay: path1 = path + x print(path1) mkdir(path1)]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[PSW的使用]]></title>
     <url>%2Fprosonalblog%2F2019%2F09%2F16%2FPSW%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​ psw是一个8—位—寄存器：一个字节等于8位 位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0 位标志 CY AC F0 RS1 RS0 OV / P 备注：CY：进制位​ 最高位，有进位CY=1,无进位CY=0​ 例如：1000,0000 + 1000,0000 = 0000,0000 CY = 1 AC：半进制位​ 第4位，有进位AC=1，无进位AC=0​ 例如：0000,1000 + 0000,1000 = 0001,0000 CY = 0, AC = 1 F0：用户标志位RS1和RS0：寄存器组选择位​ 寄存器选择：如表 RS0 RS1 寄存器 R0 ~ R7地址 0 0 第0组 00 ~ 07H 0 1 第1组 08 ~ OFH 1 0 第2组 10 ~ 17H 1 1 第3组 18 ~ 1FH 备注：一共128个字节，00 ~ 7FH 00 ~ 1FH：存储区 32个字节 20 ~ 2FH：位寻址区 16个字节 即可以操作位又可以操作字节 30 ~ 7FH：用户RAM区 80个字节 OV：溢出标志位P：奇、偶标志位​ 得出结果，如果是奇数P=1，如果是偶数P=0 ​ 例如：0010,0000 + 0100,0010 = 0110,0010 则 P = 1 总结：12345mov Ax，#64H ADD AX，#DEH //得出结果为：142H 0110 0100 + 1101 1110 = 1 0000 0010AX = 42H CY = 1 AC = 1 OV = 1]]></content>
@@ -53,8 +86,8 @@
         <category>markdown操作</category>
       </categories>
       <tags>
-        <tag>汇编</tag>
         <tag>markdown</tag>
+        <tag>汇编</tag>
       </tags>
   </entry>
   <entry>
@@ -89,9 +122,9 @@
         <category>markdown操作</category>
       </categories>
       <tags>
+        <tag>markdown</tag>
         <tag>typora</tag>
         <tag>笔记</tag>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
