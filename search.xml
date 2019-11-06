@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Typora操作]]></title>
+    <url>%2Fprosonalblog%2F2019%2F11%2F06%2FTypora%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[文字颜色格式： 1&lt;font color="#dd0000"&gt;浅红色文字：&lt;/font&gt; #dd0000文字颜色 各种文字颜色链接：http://www.114la.com/other/rgb.htm 参考博文： markdown文字颜色]]></content>
+      <categories>
+        <category>Typora</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo常用操作]]></title>
     <url>%2Fprosonalblog%2F2019%2F11%2F06%2Fhexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[1、hexo命令说明：12345678910hexo init # 新建一个网站hexo new "文章名" #新建文章hexo new page "页面名" #新建页面 hexo clean # 清除缓存文件（db.json和已生成的静态文件，尤其是更换主题后） hexo g # 生成静态文件hexo s # 启动hexo （上述两个指令需要在博客根目录下执行） hexo d # 部署到GitHub上（前提是已经添加SSH Key，设置好账户信息） 2、hexo 操作12345678910111213hexo help # 查看帮助hexo version #查看Hexo的版本hexo algolia # 更新search庫hexo new "postName" #新建文章hexo new post "title" # 生成新文章：\source\_posts\title.md，可省略posthexo new page "pageName"#新建页面hexo clean #清除部署緩存hexo n == hexo new #新建文章hexo g == hexo generate #生成静态页面至public目录hexo s == hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo d == hexo deploy #将.deploy目录部署到GitHubhexo d -g #生成加部署hexo s -g #生成加预览 3、部署12hexo cl #清理hexo d -g #创建并上 参考博客： ​ Hexo操作指南-（命令） ​ Hexo官方文档]]></content>
@@ -122,9 +134,9 @@
         <category>markdown操作</category>
       </categories>
       <tags>
+        <tag>markdown</tag>
         <tag>typora</tag>
         <tag>笔记</tag>
-        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
