@@ -57,19 +57,19 @@
   };
 </script>
 
-  <meta name="description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
-<meta name="keywords" content="汇编">
+  <meta name="description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
+<meta name="keywords" content="树莓派">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PSW的使用">
-<meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2019/09/16/PSW的使用/index.html">
+<meta property="og:title" content="树莓派配置samba">
+<meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2020/09/06/树莓派配置samba/index.html">
 <meta property="og:site_name" content="咖啡的味道">
-<meta property="og:description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
+<meta property="og:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-16T06:02:16.294Z">
+<meta property="og:updated_time" content="2020-09-06T08:18:20.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PSW的使用">
-<meta name="twitter:description" content="pws是什么psw：又名程序状态字节。英文名称：Program Statu Word ​    psw是一个8—位—寄存器：一个字节等于8位    位序 PSW.7 PSW.6 PSW.5 PSW.4 PSW.3 PSW.2 PSW.1 PSW.0    位标志 CY AC F0 RS1 RS0 OV / P">
-  <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2019/09/16/PSW的使用/">
+<meta name="twitter:title" content="树莓派配置samba">
+<meta name="twitter:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
+  <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2020/09/06/树莓派配置samba/">
 
 
 <script id="page-configurations">
@@ -83,7 +83,7 @@
   };
 </script>
 
-  <title>PSW的使用 | 咖啡的味道</title>
+  <title>树莓派配置samba | 咖啡的味道</title>
   
 
 
@@ -280,7 +280,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2019/09/16/PSW的使用/">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/09/06/树莓派配置samba/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xueyue">
@@ -292,7 +292,7 @@
       <meta itemprop="name" content="咖啡的味道">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">PSW的使用
+        <h1 class="post-title" itemprop="name headline">树莓派配置samba
 
           
         </h1>
@@ -308,25 +308,12 @@
                 
               
 
-              <time title="创建时间：2019-09-16 12:37:21 / 修改时间：14:02:16" itemprop="dateCreated datePublished" datetime="2019-09-16T12:37:21+08:00">2019-09-16</time>
+              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
             </span>
           
             
 
             
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/prosonalblog/categories/汇编/" itemprop="url" rel="index"><span itemprop="name">汇编</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -348,87 +335,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="pws是什么"><a href="#pws是什么" class="headerlink" title="pws是什么"></a>pws是什么</h3><p>psw：又名程序状态字节。英文名称：Program Statu Word</p>
-<p>​    psw是一个<strong>8—位—寄存器</strong>：一个字节等于8位</p>
-<table>
-<thead>
-<tr>
-<th align="center">位序</th>
-<th align="center">PSW.7</th>
-<th align="center">PSW.6</th>
-<th align="center">PSW.5</th>
-<th align="center">PSW.4</th>
-<th align="center">PSW.3</th>
-<th align="center">PSW.2</th>
-<th align="center">PSW.1</th>
-<th align="center">PSW.0</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">位标志</td>
-<td align="center">CY</td>
-<td align="center">AC</td>
-<td align="center">F0</td>
-<td align="center">RS1</td>
-<td align="center">RS0</td>
-<td align="center">OV</td>
-<td align="center">/</td>
-<td align="center">P</td>
-</tr>
-</tbody></table>
-<a id="more"></a>
-
-<h4 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h4><h5 id="CY：进制位"><a href="#CY：进制位" class="headerlink" title="CY：进制位"></a><strong>CY</strong>：进制位</h5><p>​    最高位，有进位CY=1,无进位CY=0<br>​    例如：1000,0000 + 1000,0000 = 0000,0000    CY = 1</p>
-<h5 id="AC：半进制位"><a href="#AC：半进制位" class="headerlink" title="AC：半进制位"></a><strong>AC</strong>：半进制位</h5><p>​    第4位，有进位AC=1，无进位AC=0<br>​    例如：0000,1000 + 0000,1000 = 0001,0000    CY = 0,    AC = 1</p>
-<h5 id="F0：用户标志位"><a href="#F0：用户标志位" class="headerlink" title="F0：用户标志位"></a><strong>F0</strong>：用户标志位</h5><h5 id="RS1和RS0：寄存器组选择位"><a href="#RS1和RS0：寄存器组选择位" class="headerlink" title="RS1和RS0：寄存器组选择位"></a><strong>RS1和RS0</strong>：寄存器组选择位</h5><p>​    寄存器选择：如表</p>
-<table>
-<thead>
-<tr>
-<th align="center">RS0</th>
-<th align="center">RS1</th>
-<th align="center">寄存器</th>
-<th align="center">R0 ~ R7地址</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">0</td>
-<td align="center">第0组</td>
-<td align="center">00 ~ 07H</td>
-</tr>
-<tr>
-<td align="center">0</td>
-<td align="center">1</td>
-<td align="center">第1组</td>
-<td align="center">08 ~ OFH</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">0</td>
-<td align="center">第2组</td>
-<td align="center">10 ~ 17H</td>
-</tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
-<td align="center">第3组</td>
-<td align="center">18 ~ 1FH</td>
-</tr>
-</tbody></table>
-<p>备注：一共128个字节，00 ~ 7FH</p>
-<ul>
-<li>00 ~ 1FH：存储区                32个字节</li>
-<li>20 ~ 2FH：位寻址区            16个字节<ul>
-<li>即可以操作<strong><em>位</em></strong>又可以操作<strong><em>字节</em></strong></li>
-</ul>
-</li>
-<li>30 ~ 7FH：用户RAM区            80个字节</li>
-</ul>
-<h5 id="OV：溢出标志位"><a href="#OV：溢出标志位" class="headerlink" title="OV：溢出标志位"></a><strong>OV</strong>：溢出标志位</h5><h5 id="P：奇、偶标志位"><a href="#P：奇、偶标志位" class="headerlink" title="P：奇、偶标志位"></a><strong>P</strong>：奇、偶标志位</h5><p>​    得出结果，如果是奇数P=1，如果是偶数P=0</p>
-<p>​    例如：0010,0000 + 0100,0010 = 0110,0010 则 P = 1</p>
-<h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mov Ax，#64H </span><br><span class="line"></span><br><span class="line">ADD AX，#DEH 		//得出结果为：142H	 0110 0100 + 1101 1110 = 1 0000 0010</span><br><span class="line"></span><br><span class="line">AX =  42H	CY = 1	AC = 1	OV = 1</span><br></pre></td></tr></table></figure>
-
-
+        <p>安装samba服务<br>sudo apt-get install samba samba-common-bin</p>
+<p>#挂载NTFS格式硬盘</p>
+<h5 id="1、下载NTFS-3g软件"><a href="#1、下载NTFS-3g软件" class="headerlink" title="1、下载NTFS-3g软件"></a>1、下载NTFS-3g软件</h5><p>sudo apt-get install ntfs-3g -y</p>
+<h5 id="2、插入硬盘"><a href="#2、插入硬盘" class="headerlink" title="2、插入硬盘"></a>2、插入硬盘</h5><h5 id="3、df-h-查看硬盘默认挂载目录"><a href="#3、df-h-查看硬盘默认挂载目录" class="headerlink" title="3、df -h 查看硬盘默认挂载目录"></a>3、df -h 查看硬盘默认挂载目录</h5><h5 id="4、设置挂载点-sudo-mkdir-mnt-ntfs"><a href="#4、设置挂载点-sudo-mkdir-mnt-ntfs" class="headerlink" title="4、设置挂载点 sudo mkdir /mnt/ntfs"></a>4、设置挂载点 sudo mkdir /mnt/ntfs</h5><h5 id="5、卸载挂载sudo-umount"><a href="#5、卸载挂载sudo-umount" class="headerlink" title="5、卸载挂载sudo umount"></a>5、卸载挂载sudo umount</h5><h5 id="6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs"><a href="#6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs" class="headerlink" title="6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs"></a>6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs</h5><h5 id="7、fstab修改"><a href="#7、fstab修改" class="headerlink" title="7、fstab修改"></a>7、fstab修改</h5><p>/dev/sda1 /mnt/myusbdrive ntfs-3g defaults,noexec,umask=0000 0 0<br>结束</p>
+<h5 id="挂载FAT32格式U盘"><a href="#挂载FAT32格式U盘" class="headerlink" title="#挂载FAT32格式U盘"></a>#挂载FAT32格式U盘</h5><p>mkdir /mnt/usb</p>
+<h5 id="挂载设置"><a href="#挂载设置" class="headerlink" title="挂载设置"></a>挂载设置</h5><p>sudo mount -o iocharset=utf8 -t vfat /dev/sdb1 /mnt/usb</p>
+<h5 id="在fstab文件中的修改为"><a href="#在fstab文件中的修改为" class="headerlink" title="在fstab文件中的修改为"></a>在fstab文件中的修改为</h5><p>/dev/sda1 /mnt/usb  auto defaults,iocharset=utf8,umask=0000 0 0</p>
+<h5 id="samba服务器配置，配置文件为sma-config"><a href="#samba服务器配置，配置文件为sma-config" class="headerlink" title="samba服务器配置，配置文件为sma.config"></a>samba服务器配置，配置文件为sma.config</h5><h6 id="1、cd-etc-samba"><a href="#1、cd-etc-samba" class="headerlink" title="1、cd     /etc/samba/"></a>1、cd     /etc/samba/</h6><h6 id="2、先备份文件sudo-cp-sam-config-sam-config-bak"><a href="#2、先备份文件sudo-cp-sam-config-sam-config-bak" class="headerlink" title="2、先备份文件sudo cp sam.config sam.config.bak"></a>2、先备份文件sudo cp sam.config sam.config.bak</h6><h6 id="3、编写samba配置文件sam-config"><a href="#3、编写samba配置文件sam-config" class="headerlink" title="3、编写samba配置文件sam.config"></a>3、编写samba配置文件sam.config</h6><p>​      sudo vim sam.config<br>​      在文件的最后面添加以下几句话<br>​    #===================<br>​    [raspberry]      #共享文件名称<br>​    path = /mnt/ntfs         #共享文件路径<br>​    valid users = pi    #允许访问的用户（可以添加多个用户，每个用户名之间加空格）<br>​    browseable = yes    #允许游览<br>​    public    = yes    #共享开放<br>​    writable    = yes    #可写<br>​<br>保存</p>
+<p>重启samba服务器 sudo /etc/init.d/samba restart</p>
+<h4 id="添加samba共享用户"><a href="#添加samba共享用户" class="headerlink" title="添加samba共享用户"></a>添加samba共享用户</h4><p>sudo smbpassword -a pi<br>New SMB password：输入你的密码<br>Retype New SMB password：确认输入密码</p>
+<h4 id="添加新用户"><a href="#添加新用户" class="headerlink" title="添加新用户"></a>添加新用户</h4><p>sudo useradd 用户名<br>sudo smbpasswd -a 用户名</p>
+<h4 id="测试SMB服务器"><a href="#测试SMB服务器" class="headerlink" title="测试SMB服务器"></a>测试SMB服务器</h4>
     </div>
 
     
@@ -443,7 +361,7 @@
           
           <div class="post-tags">
             
-              <a href="/prosonalblog/tags/汇编/" rel="tag"># 汇编</a>
+              <a href="/prosonalblog/tags/树莓派/" rel="tag"># 树莓派</a>
             
           </div>
         
@@ -453,8 +371,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/prosonalblog/2019/09/13/hexoxo-next主题配置/" rel="next" title="hexoxo_next主题配置">
-                  <i class="fa fa-chevron-left"></i> hexoxo_next主题配置
+                <a href="/prosonalblog/2020/08/18/arduino/" rel="next" title="">
+                  <i class="fa fa-chevron-left"></i> 
                 </a>
               
             </div>
@@ -463,8 +381,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/prosonalblog/2019/09/18/python创建多个文件夹/" rel="prev" title="python创建多个文件夹">
-                  python创建多个文件夹 <i class="fa fa-chevron-right"></i>
+                <a href="/prosonalblog/2020/09/06/校园网破解/" rel="prev" title="路由器破解">
+                  路由器破解 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -521,7 +439,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#pws是什么"><span class="nav-number">1.</span> <span class="nav-text">pws是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#备注："><span class="nav-number">1.1.</span> <span class="nav-text">备注：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CY：进制位"><span class="nav-number">1.1.1.</span> <span class="nav-text">CY：进制位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#AC：半进制位"><span class="nav-number">1.1.2.</span> <span class="nav-text">AC：半进制位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#F0：用户标志位"><span class="nav-number">1.1.3.</span> <span class="nav-text">F0：用户标志位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#RS1和RS0：寄存器组选择位"><span class="nav-number">1.1.4.</span> <span class="nav-text">RS1和RS0：寄存器组选择位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#OV：溢出标志位"><span class="nav-number">1.1.5.</span> <span class="nav-text">OV：溢出标志位</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#P：奇、偶标志位"><span class="nav-number">1.1.6.</span> <span class="nav-text">P：奇、偶标志位</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结："><span class="nav-number">2.</span> <span class="nav-text">总结：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、下载NTFS-3g软件"><span class="nav-number">1.</span> <span class="nav-text">1、下载NTFS-3g软件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、插入硬盘"><span class="nav-number">2.</span> <span class="nav-text">2、插入硬盘</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、df-h-查看硬盘默认挂载目录"><span class="nav-number">3.</span> <span class="nav-text">3、df -h 查看硬盘默认挂载目录</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、设置挂载点-sudo-mkdir-mnt-ntfs"><span class="nav-number">4.</span> <span class="nav-text">4、设置挂载点 sudo mkdir /mnt/ntfs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、卸载挂载sudo-umount"><span class="nav-number">5.</span> <span class="nav-text">5、卸载挂载sudo umount</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs"><span class="nav-number">6.</span> <span class="nav-text">6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、fstab修改"><span class="nav-number">7.</span> <span class="nav-text">7、fstab修改</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#挂载FAT32格式U盘"><span class="nav-number">8.</span> <span class="nav-text">#挂载FAT32格式U盘</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#挂载设置"><span class="nav-number">9.</span> <span class="nav-text">挂载设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在fstab文件中的修改为"><span class="nav-number">10.</span> <span class="nav-text">在fstab文件中的修改为</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#samba服务器配置，配置文件为sma-config"><span class="nav-number">11.</span> <span class="nav-text">samba服务器配置，配置文件为sma.config</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、cd-etc-samba"><span class="nav-number">11.1.</span> <span class="nav-text">1、cd     /etc/samba/</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2、先备份文件sudo-cp-sam-config-sam-config-bak"><span class="nav-number">11.2.</span> <span class="nav-text">2、先备份文件sudo cp sam.config sam.config.bak</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、编写samba配置文件sam-config"><span class="nav-number">11.3.</span> <span class="nav-text">3、编写samba配置文件sam.config</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加samba共享用户"><span class="nav-number"></span> <span class="nav-text">添加samba共享用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加新用户"><span class="nav-number"></span> <span class="nav-text">添加新用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#测试SMB服务器"><span class="nav-number"></span> <span class="nav-text">测试SMB服务器</span></a></div>
         
       </div>
       <!--/noindex-->

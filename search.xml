@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[树莓派安装宝塔面板]]></title>
+    <url>%2Fprosonalblog%2F2020%2F09%2F06%2FraspberryPi%2F</url>
+    <content type="text"><![CDATA[软件更新源 /etc/apt/sources.list 1deb http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-free rpi 修改系统更新源 /etc/apt/sources.list.d/raspi.list 1deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui 网络配置 /etc/dhcpcd.conf 安装宝塔： wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;&amp; sudo bash install.sh 安装好后会出现账号、密码 Bt-Panel: http://183.93.232.168:8888username: 2lrmixyfpassword: fbb3c1b1]]></content>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[路由器破解]]></title>
     <url>%2Fprosonalblog%2F2020%2F09%2F06%2F%E6%A0%A1%E5%9B%AD%E7%BD%91%E7%A0%B4%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[路由器初始化自己设置 1、先将网线连接到lan口 2、进入路由器后台关闭dhcp 3、拿手机连接路由器 4、登录feiyang拨号上网 5、记下手机 IP地址、手机MAC地址、DNS 6、进入路由器后台 打开路由器输入192.168.1.1 7、修改路由器的IP地址与mac地址 依次输入ip地址、子网掩码255.255.255.0、网网关192.168.1.1、DNS保存 8、打开dhcp服务器，保存 9、再将网线插入WAN口，就OK了]]></content>
@@ -9,14 +17,12 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2Fprosonalblog%2F2020%2F09%2F04%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E9%85%8D%E7%BD%AEsamba%2F</url>
-    <content type="text"><![CDATA[安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs7、fstab修改/dev/sda1 /mnt/myusbdrive ntfs-3g defaults,noexec,umask=0000 0 0结束 #挂载FAT32格式U盘mkdir /mnt/usb挂载设置sudo mount -o iocharset=utf8 -t vfat /dev/sdb1 /mnt/usb在fstab文件中的修改为/dev/sda1 /mnt/usb auto defaults,iocharset=utf8,umask=0000 0 0 samba服务器配置，配置文件为sma.config1、cd /etc/samba/2、先备份文件sudo cp sam.config sam.config.bak3、编写samba配置文件sam.config sudo vim sam.config 在文件的最后面添加以下几句话 #=================== [raspberry] #共享文件名称 path = /mnt/ntfs #共享文件路径 valid users = pi #允许访问的用户（可以添加多个用户，每个用户名之间加空格） browseable = yes #允许游览 public = yes #共享开放 writable = yes #可写 保存 重启samba服务器 sudo /etc/init.d/samba restart 添加samba共享用户sudo smbpassword -a piNew SMB password：输入你的密码Retype New SMB password：确认输入密码 添加新用户sudo useradd 用户名sudo smbpasswd -a 用户名 测试SMB服务器]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2Fprosonalblog%2F2020%2F08%2F18%2FraspberryPi%2F</url>
-    <content type="text"><![CDATA[树莓派安装宝塔面板 软件更新源 /etc/apt/sources.list 1deb http://mirrors.aliyun.com/raspbian/raspbian/ stretch main contrib non-free rpi 修改系统更新源 /etc/apt/sources.list.d/raspi.list 1deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ stretch main ui 网络配置 /etc/dhcpcd.conf 安装宝塔： wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh &amp;&amp; sudo bash install.sh 安装好后会出现账号、密码 Bt-Panel: http://183.93.232.168:8888username: 2lrmixyfpassword: fbb3c1b1]]></content>
+    <title><![CDATA[树莓派配置samba]]></title>
+    <url>%2Fprosonalblog%2F2020%2F09%2F06%2F%E6%A0%91%E8%8E%93%E6%B4%BE%E9%85%8D%E7%BD%AEsamba%2F</url>
+    <content type="text"><![CDATA[安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs7、fstab修改/dev/sda1 /mnt/myusbdrive ntfs-3g defaults,noexec,umask=0000 0 0结束 #挂载FAT32格式U盘mkdir /mnt/usb 挂载设置sudo mount -o iocharset=utf8 -t vfat /dev/sdb1 /mnt/usb 在fstab文件中的修改为/dev/sda1 /mnt/usb auto defaults,iocharset=utf8,umask=0000 0 0 samba服务器配置，配置文件为sma.config1、cd /etc/samba/2、先备份文件sudo cp sam.config sam.config.bak3、编写samba配置文件sam.config​ sudo vim sam.config​ 在文件的最后面添加以下几句话​ #===================​ [raspberry] #共享文件名称​ path = /mnt/ntfs #共享文件路径​ valid users = pi #允许访问的用户（可以添加多个用户，每个用户名之间加空格）​ browseable = yes #允许游览​ public = yes #共享开放​ writable = yes #可写​保存 重启samba服务器 sudo /etc/init.d/samba restart 添加samba共享用户sudo smbpassword -a piNew SMB password：输入你的密码Retype New SMB password：确认输入密码 添加新用户sudo useradd 用户名sudo smbpasswd -a 用户名 测试SMB服务器]]></content>
+      <tags>
+        <tag>树莓派</tag>
+      </tags>
   </entry>
   <entry>
     <title></title>
