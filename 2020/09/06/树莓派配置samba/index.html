@@ -57,18 +57,18 @@
   };
 </script>
 
-  <meta name="description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
+  <meta name="description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件">
 <meta name="keywords" content="树莓派">
 <meta property="og:type" content="article">
 <meta property="og:title" content="树莓派配置samba">
 <meta property="og:url" content="http://fxueyue.gitee.io/prosonalblog/2020/09/06/树莓派配置samba/index.html">
 <meta property="og:site_name" content="咖啡的味道">
-<meta property="og:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
+<meta property="og:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-09-06T08:18:20.969Z">
+<meta property="og:updated_time" content="2020-09-06T08:28:15.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树莓派配置samba">
-<meta name="twitter:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件sudo apt-get install ntfs-3g -y 2、插入硬盘3、df -h 查看硬盘默认挂载目录4、设置挂载点 sudo mkdir /mnt/ntfs5、卸载挂载sudo umount6、sudo mount -o uid=p">
+<meta name="twitter:description" content="安装samba服务sudo apt-get install samba samba-common-bin #挂载NTFS格式硬盘 1、下载NTFS-3g软件">
   <link rel="canonical" href="http://fxueyue.gitee.io/prosonalblog/2020/09/06/树莓派配置samba/">
 
 
@@ -308,7 +308,7 @@
                 
               
 
-              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
+              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:28:15" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
             </span>
           
             
@@ -337,7 +337,9 @@
       
         <p>安装samba服务<br>sudo apt-get install samba samba-common-bin</p>
 <p>#挂载NTFS格式硬盘</p>
-<h5 id="1、下载NTFS-3g软件"><a href="#1、下载NTFS-3g软件" class="headerlink" title="1、下载NTFS-3g软件"></a>1、下载NTFS-3g软件</h5><p>sudo apt-get install ntfs-3g -y</p>
+<h5 id="1、下载NTFS-3g软件"><a href="#1、下载NTFS-3g软件" class="headerlink" title="1、下载NTFS-3g软件"></a>1、下载NTFS-3g软件</h5><a id="more"></a>
+
+<p>sudo apt-get install ntfs-3g -y</p>
 <h5 id="2、插入硬盘"><a href="#2、插入硬盘" class="headerlink" title="2、插入硬盘"></a>2、插入硬盘</h5><h5 id="3、df-h-查看硬盘默认挂载目录"><a href="#3、df-h-查看硬盘默认挂载目录" class="headerlink" title="3、df -h 查看硬盘默认挂载目录"></a>3、df -h 查看硬盘默认挂载目录</h5><h5 id="4、设置挂载点-sudo-mkdir-mnt-ntfs"><a href="#4、设置挂载点-sudo-mkdir-mnt-ntfs" class="headerlink" title="4、设置挂载点 sudo mkdir /mnt/ntfs"></a>4、设置挂载点 sudo mkdir /mnt/ntfs</h5><h5 id="5、卸载挂载sudo-umount"><a href="#5、卸载挂载sudo-umount" class="headerlink" title="5、卸载挂载sudo umount"></a>5、卸载挂载sudo umount</h5><h5 id="6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs"><a href="#6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs" class="headerlink" title="6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs"></a>6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs</h5><h5 id="7、fstab修改"><a href="#7、fstab修改" class="headerlink" title="7、fstab修改"></a>7、fstab修改</h5><p>/dev/sda1 /mnt/myusbdrive ntfs-3g defaults,noexec,umask=0000 0 0<br>结束</p>
 <h5 id="挂载FAT32格式U盘"><a href="#挂载FAT32格式U盘" class="headerlink" title="#挂载FAT32格式U盘"></a>#挂载FAT32格式U盘</h5><p>mkdir /mnt/usb</p>
 <h5 id="挂载设置"><a href="#挂载设置" class="headerlink" title="挂载设置"></a>挂载设置</h5><p>sudo mount -o iocharset=utf8 -t vfat /dev/sdb1 /mnt/usb</p>
@@ -371,8 +373,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/prosonalblog/2020/08/18/arduino/" rel="next" title="">
-                  <i class="fa fa-chevron-left"></i> 
+                <a href="/prosonalblog/2020/09/06/raspberryPi/" rel="next" title="树莓派安装宝塔面板">
+                  <i class="fa fa-chevron-left"></i> 树莓派安装宝塔面板
                 </a>
               
             </div>
@@ -454,7 +456,7 @@
         
           <a href="/prosonalblog/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

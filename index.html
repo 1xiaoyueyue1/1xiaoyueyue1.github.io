@@ -274,87 +274,6 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/09/06/raspberryPi/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xueyue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/prosonalblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="咖啡的味道">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/prosonalblog/2020/09/06/raspberryPi/" class="post-title-link" itemprop="url">树莓派安装宝塔面板</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:16:18" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
-            </span>
-          
-            
-
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>软件更新源    /etc/apt/sources.list</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/prosonalblog/2020/09/06/raspberryPi/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
     <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/09/06/校园网破解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -467,7 +386,7 @@
                 
               
 
-              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:18:20" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
+              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:28:15" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
             </span>
           
             
@@ -488,16 +407,97 @@
       
           <p>安装samba服务<br>sudo apt-get install samba samba-common-bin</p>
 <p>#挂载NTFS格式硬盘</p>
-<h5 id="1、下载NTFS-3g软件"><a href="#1、下载NTFS-3g软件" class="headerlink" title="1、下载NTFS-3g软件"></a>1、下载NTFS-3g软件</h5><p>sudo apt-get install ntfs-3g -y</p>
-<h5 id="2、插入硬盘"><a href="#2、插入硬盘" class="headerlink" title="2、插入硬盘"></a>2、插入硬盘</h5><h5 id="3、df-h-查看硬盘默认挂载目录"><a href="#3、df-h-查看硬盘默认挂载目录" class="headerlink" title="3、df -h 查看硬盘默认挂载目录"></a>3、df -h 查看硬盘默认挂载目录</h5><h5 id="4、设置挂载点-sudo-mkdir-mnt-ntfs"><a href="#4、设置挂载点-sudo-mkdir-mnt-ntfs" class="headerlink" title="4、设置挂载点 sudo mkdir /mnt/ntfs"></a>4、设置挂载点 sudo mkdir /mnt/ntfs</h5><h5 id="5、卸载挂载sudo-umount"><a href="#5、卸载挂载sudo-umount" class="headerlink" title="5、卸载挂载sudo umount"></a>5、卸载挂载sudo umount</h5><h5 id="6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs"><a href="#6、sudo-mount-o-uid-pi-gid-pi-dev-sda1-dev-ntfs" class="headerlink" title="6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs"></a>6、sudo mount -o uid=pi,gid=pi /dev/sda1 /dev/ntfs</h5><h5 id="7、fstab修改"><a href="#7、fstab修改" class="headerlink" title="7、fstab修改"></a>7、fstab修改</h5><p>/dev/sda1 /mnt/myusbdrive ntfs-3g defaults,noexec,umask=0000 0 0<br>结束</p>
-<h5 id="挂载FAT32格式U盘"><a href="#挂载FAT32格式U盘" class="headerlink" title="#挂载FAT32格式U盘"></a>#挂载FAT32格式U盘</h5><p>mkdir /mnt/usb</p>
-<h5 id="挂载设置"><a href="#挂载设置" class="headerlink" title="挂载设置"></a>挂载设置</h5><p>sudo mount -o iocharset=utf8 -t vfat /dev/sdb1 /mnt/usb</p>
-<h5 id="在fstab文件中的修改为"><a href="#在fstab文件中的修改为" class="headerlink" title="在fstab文件中的修改为"></a>在fstab文件中的修改为</h5><p>/dev/sda1 /mnt/usb  auto defaults,iocharset=utf8,umask=0000 0 0</p>
-<h5 id="samba服务器配置，配置文件为sma-config"><a href="#samba服务器配置，配置文件为sma-config" class="headerlink" title="samba服务器配置，配置文件为sma.config"></a>samba服务器配置，配置文件为sma.config</h5><h6 id="1、cd-etc-samba"><a href="#1、cd-etc-samba" class="headerlink" title="1、cd     /etc/samba/"></a>1、cd     /etc/samba/</h6><h6 id="2、先备份文件sudo-cp-sam-config-sam-config-bak"><a href="#2、先备份文件sudo-cp-sam-config-sam-config-bak" class="headerlink" title="2、先备份文件sudo cp sam.config sam.config.bak"></a>2、先备份文件sudo cp sam.config sam.config.bak</h6><h6 id="3、编写samba配置文件sam-config"><a href="#3、编写samba配置文件sam-config" class="headerlink" title="3、编写samba配置文件sam.config"></a>3、编写samba配置文件sam.config</h6><p>​      sudo vim sam.config<br>​      在文件的最后面添加以下几句话<br>​    #===================<br>​    [raspberry]      #共享文件名称<br>​    path = /mnt/ntfs         #共享文件路径<br>​    valid users = pi    #允许访问的用户（可以添加多个用户，每个用户名之间加空格）<br>​    browseable = yes    #允许游览<br>​    public    = yes    #共享开放<br>​    writable    = yes    #可写<br>​<br>保存</p>
-<p>重启samba服务器 sudo /etc/init.d/samba restart</p>
-<h4 id="添加samba共享用户"><a href="#添加samba共享用户" class="headerlink" title="添加samba共享用户"></a>添加samba共享用户</h4><p>sudo smbpassword -a pi<br>New SMB password：输入你的密码<br>Retype New SMB password：确认输入密码</p>
-<h4 id="添加新用户"><a href="#添加新用户" class="headerlink" title="添加新用户"></a>添加新用户</h4><p>sudo useradd 用户名<br>sudo smbpasswd -a 用户名</p>
-<h4 id="测试SMB服务器"><a href="#测试SMB服务器" class="headerlink" title="测试SMB服务器"></a>测试SMB服务器</h4>
+<h5 id="1、下载NTFS-3g软件"><a href="#1、下载NTFS-3g软件" class="headerlink" title="1、下载NTFS-3g软件"></a>1、下载NTFS-3g软件</h5>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/prosonalblog/2020/09/06/树莓派配置samba/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/09/06/raspberryPi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xueyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/prosonalblog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="咖啡的味道">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/prosonalblog/2020/09/06/raspberryPi/" class="post-title-link" itemprop="url">树莓派安装宝塔面板</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-09-06 15:14:29 / 修改时间：16:16:18" itemprop="dateCreated datePublished" datetime="2020-09-06T15:14:29+08:00">2020-09-06</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>软件更新源    /etc/apt/sources.list</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/prosonalblog/2020/09/06/raspberryPi/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -675,7 +675,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/04/11/Untitled 1/">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/03/14/安卓好用软件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xueyue">
@@ -689,7 +689,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/prosonalblog/2020/04/11/Untitled 1/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/prosonalblog/2020/03/14/安卓好用软件/" class="post-title-link" itemprop="url">安卓好用软件</a>
           
         </h1>
 
@@ -704,87 +704,11 @@
                 
               
 
-              <time title="创建时间：2020-04-11 13:30:27" itemprop="dateCreated datePublished" datetime="2020-04-11T13:30:27+08:00">2020-04-11</time>
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/03/14/论文/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xueyue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/prosonalblog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="咖啡的味道">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/prosonalblog/2020/03/14/论文/" class="post-title-link" itemprop="url">毕业论文</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2020-03-14 10:57:29" itemprop="dateCreated datePublished" datetime="2020-03-14T10:57:29+08:00">2020-03-14</time>
+              <time title="创建时间：2020-03-14 10:57:29 / 修改时间：11:06:24" itemprop="dateCreated datePublished" datetime="2020-03-14T10:57:29+08:00">2020-03-14</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-09 13:01:51" itemprop="dateModified" datetime="2020-04-09T13:01:51+08:00">2020-04-09</time>
-              </span>
             
           
 
@@ -799,7 +723,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><h4 id="2-1"><a href="#2-1" class="headerlink" title="2.1"></a>2.1</h4><h4 id="2-2"><a href="#2-2" class="headerlink" title="2.2"></a>2.2</h4><h4 id="2-3"><a href="#2-3" class="headerlink" title="2.3"></a>2.3</h4><h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><h4 id="3-1"><a href="#3-1" class="headerlink" title="3.1"></a>3.1</h4><h4 id="3-2"><a href="#3-2" class="headerlink" title="3.2"></a>3.2</h4><h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><h4 id="4-1"><a href="#4-1" class="headerlink" title="4.1"></a>4.1</h4><h4 id="4-2"><a href="#4-2" class="headerlink" title="4.2"></a>4.2</h4><h3 id="5-结束语"><a href="#5-结束语" class="headerlink" title="5 结束语"></a>5 结束语</h3><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3>
+          <h4 id="1、阅读类软件"><a href="#1、阅读类软件" class="headerlink" title="1、阅读类软件"></a>1、阅读类软件</h4><ul>
+<li>厚墨apk</li>
+<li><a href="https://www.lanzous.com/ia8ksub" target="_blank" rel="noopener">静读天下apk</a>  密码:666</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/prosonalblog/2020/03/14/安卓好用软件/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -863,7 +799,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-19 01:05:42" itemprop="dateModified" datetime="2020-03-19T01:05:42+08:00">2020-03-19</time>
+                <time title="修改时间：2020-09-06 16:29:01" itemprop="dateModified" datetime="2020-09-06T16:29:01+08:00">2020-09-06</time>
               </span>
             
           
@@ -990,7 +926,7 @@
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/03/14/安卓好用软件/">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/03/14/论文/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xueyue">
@@ -1004,7 +940,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/prosonalblog/2020/03/14/安卓好用软件/" class="post-title-link" itemprop="url">安卓好用软件</a>
+            <a href="/prosonalblog/2020/03/14/论文/" class="post-title-link" itemprop="url">毕业论文</a>
           
         </h1>
 
@@ -1019,11 +955,19 @@
                 
               
 
-              <time title="创建时间：2020-03-14 10:57:29 / 修改时间：11:06:24" itemprop="dateCreated datePublished" datetime="2020-03-14T10:57:29+08:00">2020-03-14</time>
+              <time title="创建时间：2020-03-14 10:57:29" itemprop="dateCreated datePublished" datetime="2020-03-14T10:57:29+08:00">2020-03-14</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-06 16:28:51" itemprop="dateModified" datetime="2020-09-06T16:28:51+08:00">2020-09-06</time>
+              </span>
             
           
 
@@ -1038,14 +982,101 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="1、阅读类软件"><a href="#1、阅读类软件" class="headerlink" title="1、阅读类软件"></a>1、阅读类软件</h4><ul>
-<li>厚墨apk</li>
-<li><a href="https://www.lanzous.com/ia8ksub" target="_blank" rel="noopener">静读天下apk</a>  密码:666</li>
-</ul>
+          <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/prosonalblog/2020/03/14/安卓好用软件/#more" rel="contents">
+              <a class="btn" href="/prosonalblog/2020/03/14/论文/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://fxueyue.gitee.io/prosonalblog/prosonalblog/2020/02/18/女王的教室经典语录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xueyue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/prosonalblog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="咖啡的味道">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/prosonalblog/2020/02/18/女王的教室经典语录/" class="post-title-link" itemprop="url">经典语录</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2020-02-18 11:03:48" itemprop="dateCreated datePublished" datetime="2020-02-18T11:03:48+08:00">2020-02-18</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-11 16:12:15" itemprop="dateModified" datetime="2020-03-11T16:12:15+08:00">2020-03-11</time>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="女王的教室"><a href="#女王的教室" class="headerlink" title="女王的教室"></a>女王的教室</h4><p>女王的教室链接:<a href="https://pan.baidu.com/s/1B4cSpIf5Ia_jWMST4820pw" target="_blank" rel="noopener">百度云</a> 提取码:yvao</p>
+<h5 id="我们为什么要读书？"><a href="#我们为什么要读书？" class="headerlink" title="我们为什么要读书？"></a>我们为什么要读书？</h5>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/prosonalblog/2020/02/18/女王的教室经典语录/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1118,7 +1149,7 @@
         
           <a href="/prosonalblog/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">24</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
